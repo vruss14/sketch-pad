@@ -1,0 +1,21 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 235px;
+}
+
+.square {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    margin: 1px;
+    border: 1px solid black;
+}
+
+/* .square:hover{
+    background-color: rgba(0, 0, 0, 50%);
+} */
+
+.filled {
+    background-color: aqua;
+}

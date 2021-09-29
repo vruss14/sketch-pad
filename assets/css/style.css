@@ -120,20 +120,30 @@ li {
     font-size: 18px;
 }
 
+#sketch-pad-wrapper {
+    border: 10px outset #6DAAD7;
+    width: 91vw;
+    height: 75vh;
+    overflow: hidden;
+}
+
 #container {
     display: flex;
     flex-wrap: wrap;
-    width: 235px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .square {
-    width: 25px;
-    height: 25px;
+    width: 10px;
+    height: 10px;
     background-color: white;
-    margin: 1px;
-    border: 1px solid black;
 }
 
 .filled {
     background-color: aqua;
+}
+
+#reset {
+    margin: 3rem;
 }

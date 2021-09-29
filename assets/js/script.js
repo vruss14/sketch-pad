@@ -1,12 +1,19 @@
 const container = document.getElementById('container');
+const sketchWrapper = document.getElementById('sketch-pad-wrapper');
 
-// Creates an initial blank grid
+// Creates an initial blank grid based on browser dimensions
 
-for(i=0; i<64; i++) {
-    let div = document.createElement('div');
-    div.classList.add('square')
-    container.appendChild(div);
+function createGrid() {
+    const numSquares = (sketchWrapper.offsetWidth * sketchWrapper.offsetHeight) / 100
+
+    for(i=0; i<numSquares; i++) {
+        let div = document.createElement('div');
+        div.classList.add('square')
+        container.appendChild(div);
+    }
 }
+
+createGrid();
 
 // Listens for when the user mouses over particular squares in the grid; creates the drawing
 

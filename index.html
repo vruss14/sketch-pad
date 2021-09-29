@@ -18,8 +18,14 @@
     <meta name="author" content="Valerie Russell">
     <meta name="description" content="A sketching user interface that utilizes DOM manipulation and JavaScript events.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         
     <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         
     <title>Sketch Pad</title>
@@ -30,10 +36,19 @@
 
 <body>
 
-    <div id="container"></div>
+    <header>
+        <img src="assets/images/pexels-markus-spiske-2280913-darker.png" alt="Set of colored pencils" />
 
-    <button id="reset">RESET</button>
-        
+        <div id="heading-container">
+            <h1>Your adventure starts here.</h1>
+        </div>
+    </header>
+
+    <main>
+        <div id="container"></div>
+        <button id="reset">RESET</button>
+    </main>
+
 <script src="./assets/js/script.js"></script>
 </body>
 

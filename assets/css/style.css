@@ -122,9 +122,10 @@ li {
 
 #sketch-pad-wrapper {
     border: 10px outset #6DAAD7;
-    width: 91vw;
+    width: 75vw;
     height: 75vh;
     overflow: hidden;
+    cursor: url("../images/blue-pencil-cursor.png"), default;
 }
 
 #container {
@@ -141,7 +142,7 @@ li {
 }
 
 .filled {
-    background-color: aqua;
+    background-color: #224A6D;
 }
 
 #reset {

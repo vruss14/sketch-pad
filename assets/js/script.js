@@ -1,5 +1,6 @@
 const container = document.getElementById('container');
 const sketchWrapper = document.getElementById('sketch-pad-wrapper');
+let activeColor = 'blue';
 
 // Creates an initial blank grid based on browser dimensions
 
@@ -11,15 +12,29 @@ function createGrid() {
         div.classList.add('square')
         container.appendChild(div);
     }
+
+    // Creates the color palette by dynamically setting background color based on each div's ID
+
+    document.querySelectorAll('.color-swatch').forEach(color => { 
+        color.setAttribute('style', `background-color: ${color.id}`)
+    })
 }
 
 createGrid();
+
+// Updates the active color the user is drawing with (default is blue)
+
+document.querySelectorAll('.color-swatch').forEach(color => {
+    color.addEventListener('click', () => {
+      activeColor = color.id;
+    })
+})
 
 // Listens for when the user mouses over particular squares in the grid; creates the drawing
 
 document.querySelectorAll('.square').forEach(square => {
     square.addEventListener('mouseover', event => {
-      event.target.classList.add('filled')
+      event.target.setAttribute('style', `background-color: ${activeColor}`);
     })
 })
 
@@ -29,6 +44,7 @@ document.getElementById('reset').addEventListener('click', resetGrid);
 
 function resetGrid(){
     document.querySelectorAll('.square').forEach(square => {
-        square.classList.remove('filled');
+        square.setAttribute('style', 'background-color: white;');
     })
 }
+

@@ -122,8 +122,8 @@ li {
 
 #sketch-pad-wrapper {
     border: 10px outset #6DAAD7;
-    width: 75vw;
-    height: 75vh;
+    width: 67vw;
+    height: 67vh;
     overflow: hidden;
     cursor: url("../images/blue-pencil-cursor.png"), default;
 }
@@ -145,6 +145,34 @@ li {
     background-color: #224A6D;
 }
 
+#colors-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.color-swatch {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.color-swatch:hover {
+    cursor: pointer;
+}
+
 #reset {
     margin: 3rem;
+    background-color: #224A6D;
+    padding: 1rem;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+
+#reset:hover {
+    background-color: black;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }

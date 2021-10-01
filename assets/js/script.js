@@ -1,6 +1,7 @@
 const container = document.getElementById('container');
 const sketchWrapper = document.getElementById('sketch-pad-wrapper');
 let activeColor = 'blue';
+let activeTool = 'pencil';
 
 // Creates an initial blank grid based on browser dimensions
 
@@ -34,9 +35,41 @@ document.querySelectorAll('.color-swatch').forEach(color => {
 
 document.querySelectorAll('.square').forEach(square => {
     square.addEventListener('mouseover', event => {
-      event.target.setAttribute('style', `background-color: ${activeColor}`);
+        if(activeTool === 'pencil') {
+            event.target.setAttribute('style', `background-color: ${activeColor}`);
+        } else if (activeTool === 'eraser') {
+            event.target.setAttribute('style', 'background-color: white;');
+
+        }
     })
 })
+
+
+// Pencil & eraser functionality; determine which tool is active to use in the sketch pad
+
+document.getElementById('pencil-tool').addEventListener('click', activatePencil)
+
+function activatePencil() {
+    activeTool = 'pencil';
+    updateCursor();
+}
+
+document.getElementById('eraser').addEventListener('click', activateEraser);
+
+function activateEraser() {
+    activeTool = 'eraser';
+    updateCursor();
+}
+
+// Updates the cursor with the correct image based on the active tool
+
+function updateCursor() {
+    if(activeTool === 'pencil') {
+        sketchWrapper.setAttribute('style', 'cursor: url("./assets/images/blue-pencil-cursor.png"), default;');
+    } else {
+        sketchWrapper.setAttribute('style', 'cursor: url("./assets/images/eraser-vector-cursor.png"), default;')
+    }
+}
 
 // Resets the grid to give the user an opportunity to create a new drawing
 

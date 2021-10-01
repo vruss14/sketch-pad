@@ -163,6 +163,29 @@ li {
     transform: scale(1.1);
 }
 
+#pencil-tool {
+    transform: rotate(140deg);
+    width: 88px;
+    height: 88px;
+    margin-left: 1rem;
+}
+
+#pencil-tool:hover {
+    transform: scale(1.1) rotate(140deg);
+    cursor: pointer;
+}
+
+#eraser {
+    width: 64px;
+    height: 64px;
+    margin-left: 1rem;
+}
+
+#eraser:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 #reset {
     margin: 3rem;
     background-color: #224A6D;

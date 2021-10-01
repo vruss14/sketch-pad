@@ -30,6 +30,75 @@ header h1 {
     height: 50%;
 }
 
+#nav-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    background-color: black;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+}
+
+#nav-list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav-list li {
+    margin: 1rem 5rem;
+    list-style: none;
+    padding: 5px;
+}
+
+#nav-list li:hover {
+    transform: scale(1.1);
+    animation: 1s draw;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.nav-link {
+    border-radius: 10px;
+    font-size: 28px;
+    padding: 1rem;
+}
+
+@keyframes draw {
+    0% {
+        border-left: 2px solid white;
+        transition: 0.2s ease-in-out;
+    }
+
+    25%{
+        border-top: 2px solid white;
+        transition: 0.2s ease-in-out;
+    }
+
+    50% {
+        border-right: 2px solid white;
+        transition: 0.2s ease-in-out;
+    }
+
+    75% {
+        border-bottom: 2px solid white;
+        transition: 0.2s ease-in-out;
+    }
+
+    100% {
+        border-left: 2px solid white;
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        transition: 0.2s ease-in-out;
+    }
+}
+
 #heading-span {
     color: #6DAAD7;
 }

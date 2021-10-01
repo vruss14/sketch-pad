@@ -160,6 +160,7 @@ li {
 
 .color-swatch:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 #reset {
@@ -169,10 +170,12 @@ li {
     font-family: Helvetica, sans-serif;
     color: white;
     border-radius: 5px;
+    border: 2px transparent;
 }
 
 #reset:hover {
-    background-color: black;
+    background-color: #FFCD76;
+    color: black;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }

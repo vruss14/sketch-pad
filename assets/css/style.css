@@ -312,6 +312,12 @@ li {
 /* Responsive styling for all devices/viewports */
 
 @media screen and (max-width: 950px) {
+
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
     #nav-list li {
         margin: 1rem 1rem;
     }

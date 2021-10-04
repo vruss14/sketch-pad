@@ -33,11 +33,7 @@ This page is a simple sketching user interface meant to showcase the power of fr
 
 Below is a screenshot of the desktop version of the deployed page:
 
-![screenshot of webpage for desktop]()
-
-Below is a screenshot of the deployed page on mobile:
-
-![screenshot of webpage for mobile]()
+![screenshot of webpage for desktop](./assets/images/sketch-pad-desktop.png)
 
 ## Credits
 

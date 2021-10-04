@@ -1,46 +1,15 @@
-p {
-    font-family: Helvetica;
-    font-weight: 300;
-}
-
-header img {
-    width: 100%;
-    height: auto;
-    max-height: 100vh;
-    position: relative;
-}
-
-#heading-container {
-    position: absolute;
-    top: 50%;
-    margin-top: -5%;
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-
-header h1 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 7vw;
-    color: white;
-}
-
-#pencils-hero {
-    width: 100%;
-    height: 50%;
-}
+/* Styling for the navbar at the top of the page */
 
 #nav-wrapper {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
+    align-items: center;
     background-color: black;
     display: flex;
-    width: 100%;
-    align-items: center;
-    padding: 1rem;
     justify-content: center;
+    left: 0;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 #nav-list {
@@ -51,16 +20,17 @@ header h1 {
 }
 
 #nav-list li {
-    margin: 1rem 5rem;
     list-style: none;
+    margin: 1rem 5rem;
     padding: 5px;
 }
 
 #nav-list li:hover {
-    transform: scale(1.1);
     animation: 1s draw;
-    animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transform: scale(1.1);
+
 }
 
 .nav-link {
@@ -68,6 +38,8 @@ header h1 {
     font-size: 28px;
     padding: 1rem;
 }
+
+/* Animation for when a user hovers over a nav link */
 
 @keyframes draw {
     0% {
@@ -99,6 +71,30 @@ header h1 {
     }
 }
 
+/* Styling for the first section; brand name & tagline */
+
+#heading-container {
+    height: auto;
+    margin-top: -5%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
+header img {
+    height: auto;
+    max-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+header h1 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7vw;
+}
+
 #heading-span {
     color: #6DAAD7;
 }
@@ -106,28 +102,37 @@ header h1 {
 #tagline {
     color: white;
     line-height: 1.25;
-
 }
 
+/* Typography styling */
+
 h2 {
+    color: black;
     font-family: 'Bebas Neue', cursive;
     font-size: 4vw;
-    color: black;
     margin: 3rem;
     text-align: center;
 }
 
 h3 {
+    color: black;
     font-family: 'Bebas Neue', cursive;
     font-size: 3vw;
-    color: black;
 }
 
+
+p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+/* Styling for features section */
+
 .page-section {
-    min-height: 100vh;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    min-height: 100vh;
 }
 
 .flex-wrapper {
@@ -137,11 +142,11 @@ h3 {
 }
 
 .product-highlight {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .product-info {
@@ -149,13 +154,15 @@ h3 {
 }
 
 .product-info p {
-    padding-right: 2rem;
     line-height: 1.25;
+    padding-right: 2rem;
 }
 
 .product-descr {
     margin-bottom: 1rem;
 }
+
+/* Styling for the instructions section */
 
 #dark-section {
     background-color: rgb(31, 32, 34);
@@ -171,12 +178,12 @@ ol {
 }
 
 li {
-    font-family: Helvetica, sans-serif;
     color: white;
-    line-height: 1.25;
+    font-family: Helvetica, sans-serif;
     font-weight: 300;
-    margin-top: 2rem;
+    line-height: 1.25;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .main-point {
@@ -185,47 +192,45 @@ li {
 }
 
 .subpoint {
-    margin-left: 2rem;
     font-size: 18px;
+    margin-left: 2rem;
 }
+
+/* Styling for the sketch pad and tools */
 
 #sketch-pad-wrapper {
     border: 30px groove rgb(141, 92, 2);
     border-radius: 5px;
-    width: 67vw;
+    cursor: url("../images/blue-pencil-cursor.png"), default;
     height: 67vh;
     overflow: hidden;
-    cursor: url("../images/blue-pencil-cursor.png"), default;
+    width: 67vw;
 }
 
 #container {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     overflow: hidden;
+    width: 100%;
 }
 
 .square {
-    width: 10px;
-    height: 10px;
     background-color: white;
-}
-
-.filled {
-    background-color: #224A6D;
+    height: 10px;
+    width: 10px;
 }
 
 #colors-container {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 .color-swatch {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 5px;
     border: 2px solid black;
+    border-radius: 50%;
+    height: 50px;
+    margin: 5px;
+    width: 50px;
 }
 
 .color-swatch:hover {
@@ -234,36 +239,37 @@ li {
 }
 
 #pencil-tool {
-    transform: rotate(140deg);
-    width: 88px;
     height: 88px;
     margin-left: 1rem;
+    transform: rotate(140deg);
+    width: 88px;
 }
 
 #pencil-tool:hover {
-    transform: scale(1.1) rotate(140deg);
     cursor: pointer;
+    transform: scale(1.1) rotate(140deg);
 }
 
 #eraser {
-    width: 64px;
     height: 64px;
     margin-left: 1rem;
+    width: 64px;
+
 }
 
 #eraser:hover {
-    transform: scale(1.1);
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 #reset {
-    margin: 3rem;
     background-color: #224A6D;
-    padding: 1rem;
-    font-family: Helvetica, sans-serif;
-    color: white;
-    border-radius: 5px;
     border: 2px transparent;
+    border-radius: 5px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    margin: 3rem;
+    padding: 1rem;
 }
 
 #reset:hover {
@@ -273,17 +279,19 @@ li {
     transition: 0.3s ease-in-out;
 }
 
+/* Styling for the footer */
+
 .half-page-section {
-    min-height: 50vh;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    min-height: 50vh;
 }
 
 #acknowledgements-section {
+    align-items: center;
     background-color: #224A6D;
     display: flex;
-    align-items: center;
 }
 
 #acknowledgements-section h2, #acknowledgements-section p {
@@ -296,13 +304,14 @@ li {
     text-align: center;
 }
 
-#pexels-link {
+.footer-link {
     font-family: Helvetica, sans-serif;
     text-decoration: underline;
 }
 
-@media screen and (max-width: 950px) {
+/* Responsive styling for all devices/viewports */
 
+@media screen and (max-width: 950px) {
     #nav-list li {
         margin: 1rem 1rem;
     }
@@ -312,18 +321,16 @@ li {
     }
 
     .blue-pencil {
-        width: 50vw;
         height: auto;
+        width: 50vw;
     }
 
     #sketch-pad-wrapper {
         width: 75vw;
     }
-
 }
 
 @media screen and (max-width: 692px) {
-
     header h1 {
         font-size: 12vw;
     }
@@ -353,11 +360,9 @@ li {
         justify-content: center;
         margin-top: 2rem;
     }
-
 }
 
 @media screen and (max-width: 565px) {
-
     header h1 {
         font-size: 12vw;
     }
@@ -390,11 +395,9 @@ li {
     h3, .main-point {
         font-size: 7vw;
     }
-
 }
 
 @media screen and (max-width: 430px) {
-
     .nav-link {
         font-size: 14px;
     }
@@ -414,11 +417,9 @@ li {
     .subpoint {
         margin-left: 1rem;
     }
-
 }
 
 @media screen and (max-width: 350px) {
-
     .nav-link {
         font-size: 10px;
     }
@@ -426,6 +427,4 @@ li {
     #tagline {
         margin: 1.5rem;
     }
-
 }
-

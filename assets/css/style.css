@@ -318,6 +318,7 @@ li {
     }
 
     header img {
+        overflow-x: hidden;
         width: auto;
     }
 

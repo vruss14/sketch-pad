@@ -190,7 +190,8 @@ li {
 }
 
 #sketch-pad-wrapper {
-    border: 10px outset #6DAAD7;
+    border: 30px groove rgb(141, 92, 2);
+    border-radius: 5px;
     width: 67vw;
     height: 67vh;
     overflow: hidden;
@@ -270,4 +271,32 @@ li {
     color: black;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+}
+
+.half-page-section {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#acknowledgements-section {
+    background-color: #224A6D;
+    display: flex;
+    align-items: center;
+}
+
+#acknowledgements-section h2, #acknowledgements-section p {
+    color: white;
+}
+
+.reference-p {
+    font-size: 24px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#pexels-link {
+    font-family: Helvetica, sans-serif;
+    text-decoration: underline;
 }

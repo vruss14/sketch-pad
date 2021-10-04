@@ -73,6 +73,10 @@
 
 /* Styling for the first section; brand name & tagline */
 
+header {
+    overflow-x: hidden;
+}
+
 #heading-container {
     height: auto;
     margin-top: -5%;

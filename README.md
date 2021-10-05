@@ -6,7 +6,7 @@ A sketching UI that utilizes DOM manipulation and events.
 
 ## Description
 
-The purpose of this project was to create a simple way for users to sketch a picture within their web browsers, and I accomplished this through utilizing DOM manipulation and mouseover events. I've created many projects in the past that have utilized click and submit events, especially in the context of forms, so it was a new experience to think about how to use mouseover events to create a sketching effect.
+The purpose of this project was to create a simple way for users to sketch a picture within their web browsers, and I accomplished this through utilizing DOM manipulation and mouseover events. I've created many projects in the past that have utilized click and submit events, especially in the context of forms, so it was a new experience to think about how to use mouseover events to create a sketching effect. I'm not entirely sure what would be the best approach to mimic mouseover events on tablets and mobile devices, but that would be a great idea for future development to enhance the user experience.
 
 I developed several skills in the process of creating this page that I am certain will benefit me in future projects. This was the first project I have created where I created a nested HTML list. I also created a custom animation for hovering over nav links, utilized smooth scrolling (which creates a slow scrolling effect when a user clicks on one of the navbar options), and I divided the page into sections that each take up the full viewport height. I personally really like sites that divide a page into sections that take up the full viewport height, so it was a wonderful experience to create a page like this.
 

@@ -74,6 +74,7 @@
 /* Styling for the first section; brand name & tagline */
 
 header {
+    max-height: 100%;
     max-width: 100%;
     overflow: hidden;
 }
